@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img width="50px" src="./img/duck.png" alt="Dashboard Logo"
+                        class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li>
+                            <a class="nav-link active" href="">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Storico Prestiti</a>
+                        </li>
+                        <a class="nav-link active" href="#">Help</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <H2 class="mt-4">Nuovo Libro</H2>
+                <div class="col mt-3">
+                    <label for="formGroupExampleInput" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
+                        aria-label="Inserisci il nome dell'autore">
+                </div>
+                <div class="col mt-3"><label for="formGroupExampleInput" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
+                        aria-label="Inserisci il cognome dell'autore">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="col mt-3">
+                        <label for="formGroupExampleInput" class="form-label">Titolo</label>
+                        <input type="text" class="form-control" placeholder="Inserisci il titolo del libro"
+                            aria-label="Inserisci il nome dell'autore">
+                        <small class="text-muted">titolo verione italiana</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-12 mt-4">
+                    <label for="formGroupExampleInput" class="form-label">Genere</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">horror</option>
+                        <option value="2">commedy</option>
+                        <option value="3">bho</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-12 mt-4">
+                    <label for="formGroupExampleInput" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" placeholder="Inserisci L'anno"
+                        aria-label="Inserisci L'anno">
+                </div>
+                <div class="col-lg-4 col-12 mt-4">
+                    <label for="formGroupExampleInput" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il dodice ISBN#"
+                        aria-label="Inserisci il dodice ISBN#">
+                </div>
+            </div>
+
+            <hr class="mt-5">
+
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                            <label class="form-check-label" for="checkChecked">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Aggiungi Libro
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
